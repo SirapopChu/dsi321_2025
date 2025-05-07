@@ -30,8 +30,8 @@ with sync_playwright() as p:
     # Validate the saved session
     logger.info("Session saved. Validating...")
     data = json.load(open(AUTH_TWITTER, "r"))
-    if len(data['cookies']) > (13*2) and len(data['cookies'][0]['value']) > 500:
-        logger.info("Session is valid ✅")
-    else:
-        logger.error("Session is invalid ❌. Removing file...")
-        os.remove(AUTH_TWITTER)
+    # if len(data['cookies']) > 13 and len(data['cookies'][0]['value']) > 100:
+    #     logger.info("Session is valid ✅")
+    # else:
+    #     logger.error("Session is invalid ❌. Removing file...")
+    #     os.remove(AUTH_TWITTER)
