@@ -180,9 +180,7 @@ def save_to_parquet(data: pd.DataFrame):
 if __name__ == "__main__":
     tags = [
         "#ธรรมศาสตร์ช้างเผือก",
-
         "#TCAS",
-        
         "#รับตรง", 
     ]
 
