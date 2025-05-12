@@ -12,9 +12,9 @@ from config.logging.modern_log import LoggingConfig
 # Import path configuration
 from config.path_config import AUTH_TWITTER
 # Import validation configuration
-from src.validation.validate import ValidationPydantic, TweetData
+from src.backend.validation.validate import ValidationPydantic, TweetData
 # Import LakeFS loader
-from src.load.lakefs_loader import LakeFSLoader
+from src.backend.load.lakefs_loader import LakeFSLoader
 
 logger = LoggingConfig(level="DEBUG", level_console="DEBUG").get_logger()
 

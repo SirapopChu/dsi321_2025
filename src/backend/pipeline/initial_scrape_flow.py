@@ -4,11 +4,11 @@ import os
 import asyncio
 
 # Import XScraping for scraping
-from src.scraping.x_scraping import XScraping
+from src.backend.scraping.x_scraping import XScraping
 # Import LakeFS loader
-from src.load.lakefs_loader import LakeFSLoader
+from src.backend.load.lakefs_loader import LakeFSLoader
 # Import validation configuration
-from src.validation.validate import ValidationPydantic, TweetData
+from src.backend.validation.validate import ValidationPydantic, TweetData
 # Import modern logging configuration
 from config.logging.modern_log import LoggingConfig
 # Import path configuration
