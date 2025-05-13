@@ -1,7 +1,6 @@
 import streamlit as st 
 import os
 import pandas as pd 
-
 # Import path configuration
 from config.path_config import lakefs_s3_path
 
