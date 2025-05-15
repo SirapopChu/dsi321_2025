@@ -95,7 +95,7 @@ source .venv/Scripts/activate
 ```
 ** macOS & Linux **
 ```bash
-souce .venv/bin/activate
+source .venv/bin/activate
 ```
 4. Run the start script
 ```bash
