@@ -37,7 +37,7 @@ This system was developed to **Track and analyze public data** related to Thamma
 
 ## 🏗️ System Architecture
 
-![System Architecture](./system architect.png)
+![System Architecture]([system architect.png](https://github.com/SirapopChu/dsi321_2025/blob/main/system%20architect.png))
 
 **Flow Summary:**
 
