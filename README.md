@@ -14,24 +14,24 @@
 
 ## 📘 Project Overview
 
-ระบบนี้ถูกพัฒนาขึ้นเพื่อ **ติดตามและวิเคราะห์ข้อมูลสาธารณะ** ที่เกี่ยวข้องกับมหาวิทยาลัยธรรมศาสตร์ในเชิง **วิชาการ** โดยใช้เทคนิคการดึงข้อมูลแบบเรียลไทม์และการประมวลผลภาษาธรรมชาติ (NLP) เพื่อ:
+This system was developed to **Track and analyze public data** related to Thammasat University in **academic** terms using real-time data extraction and natural language processing (NLP) techniques to:
 
-- ตรวจสอบความคิดเห็นและบทความที่กล่าวถึง TU
-- วิเคราะห์อารมณ์และหัวข้อของเนื้อหา
-- แจ้งเตือนฝ่ายประชาสัมพันธ์เมื่อพบข้อมูลสำคัญ
-- ปรับกลยุทธ์การสื่อสารให้เหมาะสมกับสถานการณ์
-- วิเคราะห์สภาวะความเห็นสาธารณะต่อมหาวิทยาลัย
+- Check comments and articles mentioning TU
+- Analyze the sentiment and topic of the content
+- Alert the PR department when important information is found
+- Adjust the communication strategy to suit the situation
+- Analyze the public opinion situation on the university
 
 ---
 
 ## ✨ Project Features
 
-- ✅ Real-time Scraping จาก Twitter (X) ทุก 15 นาที 
-- ✅ แปลงข้อมูลเป็น Parquet และจัดเก็บใน lakeFS
-- ✅ ตรวจจับข้อมูลใหม่ผ่านการ hash และเปรียบเทียบ
-- ✅ วิเคราะห์ด้วย NLP (Sentiment, Topic Modeling)
-- ✅ Streamlit Dashboard แสดงผลในรูปแบบที่เข้าใจง่าย
-- ✅ Orchestrated ด้วย Prefect และ Deploy ได้หลายแบบ
+- ✅ Real-time Scraping from Twitter (X) every 15 minutes
+- ✅ Convert data to Parquet and store in lakeFS
+- ✅ Detect new data through hashing and comparison
+- ✅ Analyze with NLP (Sentiment, Topic Modeling)
+- ✅ Streamlit Dashboard shows the results in an easy-to-understand format
+- ✅ Orchestrated with Prefect and can be deployed in multiple ways
 
 ---
 
@@ -41,26 +41,26 @@
 
 **Flow Summary:**
 
-1. ผู้ใช้โพสต์ข้อความบน X → ระบบเริ่ม scraping
-2. ตรวจสอบ hash กับข้อมูลเดิมจาก `lakeFS`
-3. หากพบข้อมูลใหม่ → บันทึกข้อมูล + อัปเดต repository
-4. โหลดข้อมูลไปยัง lakefs และ แสดงผลด้วย Dashboard ผ่าน Streamlit
-5. orchestrate pipeline ทั้งหมด ด้วย Prefect
+1. User posts a message on X → System starts scraping
+2. Check hash against original data from `lakeFS`
+3. If new data is found → Save data + Update repository
+4. Load data to lakefs and display with Dashboard via Streamlit
+5. Orchestrate entire pipeline with Prefect
 
 ---
 
 ## 🧪 Technologies
 
-| Component           | Technology             |
+| Component | Technology |
 |---------------------|------------------------|
-| Backend             | Python, FastAPI        |
-| Scraping            | Playwright             |
-| Storage             | lakeFS, Parquet        |
-| Data Validation     | Pydantic               |
-| NLP(word cloud)     | Gemini 2 Flash         |
-| Dashboard           | Streamlit              |
-| Orchestration       | Prefect                |
-| Deployment          | Docker, GitHub Actions |
+| Backend | Python, FastAPI |
+| Scraping | Playwright |
+| Storage | lakeFS, Parquet |
+| Data Validation | Pydantic |
+| NLP(word cloud) | Gemini 2 Flash |
+| Dashboard | Streamlit |
+| Orchestration | Prefect |
+| Deployment | Docker, GitHub Actions |
 
 ---
 
@@ -76,8 +76,8 @@
 
 ### 🛠️ Manual Deployment
 
-1. **Clone Repository:**
+1. **Clone Repository:** 
 
-   ```bash
-   git clone https://github.com/SirapopChu/dsi321_2025
-   cd Siapopchu/dsi321_2025
+```bash 
+git clone https://github.com/SirapopChu/dsi321_2025 
+cd Siapopchu/dsi321_2025
