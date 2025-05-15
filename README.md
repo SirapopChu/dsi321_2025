@@ -53,7 +53,7 @@ This system was developed to **Track and analyze public data** related to Thamma
 
 | Component | Technology |
 |---------------------|------------------------|
-| Backend | Python, FastAPI |
+| Backend | Python |
 | Scraping | Playwright |
 | Storage | lakeFS, Parquet |
 | Data Validation | Pydantic |
