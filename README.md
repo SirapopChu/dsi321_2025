@@ -74,10 +74,49 @@ This system was developed to **Track and analyze public data** related to Thamma
 -requirements.txt
 ---
 
-### 🛠️ Manual Deployment
+### 🛠️ Prepare Project
 
-1. **Clone Repository:** 
+1. Clone Repository:
 
 ```bash 
 git clone https://github.com/SirapopChu/dsi321_2025 
 cd Siapopchu/dsi321_2025
+```
+
+2. Create virtual environment
+```bash
+python -m venv .venv
+```
+
+3. Activate virtual environment
+** Windows **
+```bash
+source .venv/Scripts/activate
+```
+** macOS & Linux **
+```bash
+souce .venv/bin/activate
+```
+4. Run the start script
+```bash
+bash start.sh
+```
+
+### Prepare Prefect
+1. Start Prefect Server
+```bash
+docker compose --profile server up -d
+```
+2. Connect CLI container
+```bash
+docker compose run cli
+```
+3.Run initial scap flow (initail ; for base data)
+```bash
+python src/backend/pipeline/initial_scrape_flow.py
+```
+4.Schedule scraping every 15 min (incremental)
+```bash
+python src/backend/pipeline/incremental_scrape_flow.py
+```
+5.Check pipeline status (flow UI ; open in your browser : http://localhost:4200)
