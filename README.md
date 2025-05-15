@@ -37,7 +37,7 @@ This system was developed to **Track and analyze public data** related to Thamma
 
 ## 🏗️ System Architecture
 
-![System Architecture](./path-to-your-image.png)
+![System Architecture](./system architect.png)
 
 **Flow Summary:**
 
